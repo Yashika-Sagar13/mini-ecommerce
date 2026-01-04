@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filters button:hover {
+  background: #e0e0e0;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  flex: 2;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+}
+
+.card .category {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card .price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card .in {
+  color: green;
+  font-size: 0.85rem;
+}
+
+.card .out {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.card button {
+  padding: 5px 10px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.cart {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.cart-item .qty {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-item button {
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cart-item button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.summary {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
